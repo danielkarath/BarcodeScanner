@@ -10,12 +10,12 @@ import SwiftUI
 struct BSBarcodeScannerView: View {
     
     @State private var scannedCode: String = ""
-    @State var isShowingAlert: Bool = false
+    @State var alertItem: BSAlertItem?
     
     var body: some View {
         NavigationView {
             VStack {
-                BSScannerView(scannedCode: $scannedCode)
+                BSScannerView(scannedCode: $scannedCode, alertItem: $alertItem)
                     .frame(maxWidth: UIScreen.main.bounds.width-32, maxHeight: UIScreen.main.bounds.width-128)
                     //.background(Color.gray)
                 Spacer().frame(height: 16)
@@ -32,7 +32,7 @@ struct BSBarcodeScannerView: View {
                 }
                 Spacer()
                 if !scannedCode.isEmpty {
-                    BSRestartButtonView(barcodeString: scannedCode)
+                    BSRestartButtonView(barcodeString: $scannedCode)
                         .padding(.bottom, 16)
                 }
             }

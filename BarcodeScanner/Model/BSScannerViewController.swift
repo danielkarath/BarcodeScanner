@@ -49,6 +49,7 @@ final class BSScannerViewController: UIViewController {
     }
     
     private func setupCaptureSession() {
+        print("Starting capture session")
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else {
             scannerDelegate?.didFailToReadBarcode(error: .invalidDeviceInput)
             return

@@ -18,6 +18,8 @@
 		39B975A9298C68FF004F0EC6 /* BSScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B975A8298C68FF004F0EC6 /* BSScannerView.swift */; };
 		39B975AB298C730A004F0EC6 /* BSRestartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B975AA298C730A004F0EC6 /* BSRestartButtonView.swift */; };
 		39B975AD298C7673004F0EC6 /* BSCopyButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B975AC298C7673004F0EC6 /* BSCopyButtonView.swift */; };
+		39BE2ECC29951F26009806C6 /* BSAlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2ECB29951F26009806C6 /* BSAlertItem.swift */; };
+		39BE2ECE29951F8F009806C6 /* BSAlertContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2ECD29951F8F009806C6 /* BSAlertContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		39B975A8298C68FF004F0EC6 /* BSScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSScannerView.swift; sourceTree = "<group>"; };
 		39B975AA298C730A004F0EC6 /* BSRestartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSRestartButtonView.swift; sourceTree = "<group>"; };
 		39B975AC298C7673004F0EC6 /* BSCopyButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSCopyButtonView.swift; sourceTree = "<group>"; };
+		39BE2ECB29951F26009806C6 /* BSAlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSAlertItem.swift; sourceTree = "<group>"; };
+		39BE2ECD29951F8F009806C6 /* BSAlertContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSAlertContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				39B975A6298C6180004F0EC6 /* BSScannerViewController.swift */,
+				39BE2ECB29951F26009806C6 /* BSAlertItem.swift */,
+				39BE2ECD29951F8F009806C6 /* BSAlertContext.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,9 +192,11 @@
 				39B975AB298C730A004F0EC6 /* BSRestartButtonView.swift in Sources */,
 				39B975A1298C57F5004F0EC6 /* BSConstants.swift in Sources */,
 				39B975A7298C6180004F0EC6 /* BSScannerViewController.swift in Sources */,
+				39BE2ECC29951F26009806C6 /* BSAlertItem.swift in Sources */,
 				39B975A5298C5BA1004F0EC6 /* BSScanStateLabelView.swift in Sources */,
 				39B975AD298C7673004F0EC6 /* BSCopyButtonView.swift in Sources */,
 				39B975A9298C68FF004F0EC6 /* BSScannerView.swift in Sources */,
+				39BE2ECE29951F8F009806C6 /* BSAlertContext.swift in Sources */,
 				39B9759D298C569F004F0EC6 /* BSBarcodeScannerView.swift in Sources */,
 				39B975A3298C5B17004F0EC6 /* BSBarcodeLabelView.swift in Sources */,
 			);
@@ -326,8 +334,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,8 +363,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

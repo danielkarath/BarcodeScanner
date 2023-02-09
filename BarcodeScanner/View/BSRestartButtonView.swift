@@ -9,12 +9,14 @@ import SwiftUI
 
 struct BSRestartButtonView: View {
     
-    var barcodeString: String
+    @Binding var barcodeString: String
+    
     
     var body: some View {
         HStack(spacing: 20) {
             Button {
-                
+                barcodeString = ""
+                print("restart button tapped")
             } label: {
                 Text("Restart")
                     .frame(width: UIScreen.main.bounds.width-32, height: 18, alignment: .center)
@@ -30,6 +32,6 @@ struct BSRestartButtonView: View {
 
 struct BSButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        BSRestartButtonView(barcodeString: "1234456677434")
+        BSRestartButtonView(barcodeString: .constant("1234456677434"))
     }
 }
